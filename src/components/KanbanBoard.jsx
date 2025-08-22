@@ -24,7 +24,7 @@ const KanbanBoard = ({ isLoggedIn, onLoginClick, onLogoutClick }) => {
 
   const sensors = useSensors(
   useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
-  useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } })
+  useSensor(TouchSensor, { activationConstraint: { delay: 100, tolerance: 0 } })
 );
   const filteredColumns = useFilters(columns, searchQuery, activeFilters, sortBy);
 
