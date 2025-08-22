@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { PointerSensor, useSensor, useSensors,TouchSensor } from "@dnd-kit/core";
 import KanbanHeader from "./KanbanHeader/KanbanHeader";
 import EditModal from "./EditModal";
 import BoardContainer from "./BoardContainer";
@@ -23,9 +23,9 @@ const KanbanBoard = ({ isLoggedIn, onLoginClick, onLogoutClick }) => {
   const [view, setView] = useView();
 
   const sensors = useSensors(
-    useSensor(PointerSensor, { activationConstraint: { distance: 8 } })
-  );
-
+  useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+  useSensor(TouchSensor, { activationConstraint: { delay: 150, tolerance: 5 } })
+);
   const filteredColumns = useFilters(columns, searchQuery, activeFilters, sortBy);
 
   // Add new vulnerability
