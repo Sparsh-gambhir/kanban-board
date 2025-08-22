@@ -51,6 +51,7 @@ This project is a fully functional **Kanban Board** application with **user auth
 ---
 
 ## Project Structure
+```
 src/
 ├─ components/
 │ ├─ KanbanBoard.jsx
@@ -72,6 +73,7 @@ src/
 │ ├─ Index.jsx
 │ └─ NotFound.jsx
 └─ App.jsx
+```
 ---
 
 ## Getting Started
