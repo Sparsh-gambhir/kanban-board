@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Login from "./Login";
-import Signup from "./Signup";
+import Login from "./Login.jsx";
+import Signup from "./Signup.jsx";
 
 const AuthModal = ({ isOpen, onClose, onAuthSuccess }) => {
   const [activeTab, setActiveTab] = useState("login"); // "login" or "signup"

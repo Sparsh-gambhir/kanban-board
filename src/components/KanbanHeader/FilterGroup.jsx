@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import FilterDropdown from "./FilterDropdown";
-import { Filter } from "lucide-react";
+
 
 export default function FilterGroup({
   columns,

@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Modal } from "@/components/ui/modal";
 import { NewVulnerabilityForm } from "../NewVulnerabilityForm";
 import SearchBar from "./SearchBar";
 import SortButton from "./SortButton";
 import FilterGroup from "./FilterGroup";
 import ViewToggle from "./ViewToggle";
-import AddVulnerabilityButton from "./AddVulnerabilityButton";
+
 
 export const KanbanHeader = ({
   searchQuery,

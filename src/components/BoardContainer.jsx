@@ -1,7 +1,7 @@
 import { DndContext, DragOverlay } from "@dnd-kit/core";
 import { KanbanColumn } from "./KanbanColumn";
-import { VulnerabilityCard } from "./VulnerabilityCard";
-import { findVulnerability, handleDragOver, handleDragEnd } from "./dragUtils";
+import { VulnerabilityCard } from "./VulnerabilityCard.jsx";
+import { findVulnerability, handleDragOver, handleDragEnd } from "./dragUtils.jsx";
 
 export default function BoardContainer({
   columns,

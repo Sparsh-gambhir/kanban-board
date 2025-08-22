@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button.jsx";
 
 export default function FilterDropdown({
   filter,

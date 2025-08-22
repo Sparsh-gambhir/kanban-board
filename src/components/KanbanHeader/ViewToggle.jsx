@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button.jsx";
 import { Grid3x3, List } from "lucide-react";
 
 export default function ViewToggle({ view, setView }) {
